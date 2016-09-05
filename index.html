@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CANADIAN TV SHOW GENERATOR</title>
+	<script src="https://use.fontawesome.com/6005149337.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Hind|Montserrat:700" rel="stylesheet">
+	<link rel="stylesheet" href="styles/style.css">
+	<!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon"> 
+
+</head>
+<body>
+	<header id="home">
+		<div class="wrapper">
+			<h1>Cancon Generator</h1>
+			<!-- <p>Have you ever had a brilliant idea for a TV show, and wanted to pitch your idea to a network? Maybe you thought to yourself, "this idea is brilliant! It has to be on TV!". Now is your chance! Fill out the form below to generate a logline. Be sure to share this app with all your friends! We've added some links at the bottom of the page of TV networks who accept pitch ideas.</p> -->
+		</div>
+	</header>
+	<main>
+		<div class="wrapper">
+			<form action="">
+				<section>
+					<h2><i class="fa fa-angle-right" aria-hidden="true"></i> Characters</h2>
+					<div class="sideLine lineCharacters"></div>
+
+					<div class="flexRow">
+						<div>
+							<label for="animal">Animal</label>
+							<input type="radio" name="character" id="animal" value="animal">
+						</div>
+
+						<div>
+							<label for="officer of the law">Officer of the Law</label>
+							<input type="radio" name="character" id="officer of the law" value="officerOfLaw">
+						</div>
+
+						<div>
+							<label for="celebrity">Celebrity</label>
+							<input type="radio" name="character" id="celebrity" value="celebrity">
+						</div>
+
+						<div>
+							<label for="superhuman">Superhuman</label>
+							<input type="radio" name="character" id="superhuman" value="superhuman">
+						</div>
+					</div>
+
+				</section>
+				<section id="personalitySection">
+					<h2><i class="fa fa-angle-right" aria-hidden="true"></i> Personality Traits</h2>
+					<div class="sideLine linePersonality"></div>
+
+					<div class="flexRow">
+						<div>
+							<label for="KindHeart">Innocent</label>
+							<input type="radio" name="personality" id="KindHeart" value="kindHeart">
+						</div>
+
+						<div>
+							<label for="Cynical">Cynical</label>
+							<input type="radio" name="personality" id="Cynical" value="cynical">
+						</div>
+
+						<div>
+							<label for="Aggressive">Aggressive</label>
+							<input type="radio" name="personality" id="Aggressive" value="aggressive">
+						</div>
+
+						<div>
+							<label for="smooth">Smooth</label>
+							<input type="radio" name="personality" id="smooth" value="smooth">
+						</div>
+					</div>
+
+				</section>
+				<section class="desire" id="desireSection">
+					<h2><i class="fa fa-angle-right" aria-hidden="true"></i> Secret Desire</h2>
+					<div class="sideLine lineDesire"></div>
+					<div>
+						
+						<label for="">Our hero secretly wants to:</label>
+						<!-- <input type="text" value="" id="personalDesire" name="personalDesire" placeholder="Personal Desire"> -->
+						<textarea name="personalDesire" id="personalDesire" placeholder="join the ice capades" cols="30" rows="10"></textarea>
+					</div>
+				</section>
+				<section class="setting">
+					<h2><i class="fa fa-angle-right" aria-hidden="true"></i> Setting</h2>
+					<div class="sideLine lineSetting"></div>
+
+					<div class="flexRow">
+						<div>
+							<label for="TundraGasStation">Prairie Gas Station</label>
+							<input type="radio" name="setting" id="TundraGasStation" value="Tundra Gas Station">
+						</div>
+
+						<div>
+							<label for="houseOfCommons">House Of Commons</label>
+							<input type="radio" name="setting" id="houseOfCommons" value="the House of Commons">
+						</div>
+
+						<div>
+							<label for="bayStreetStockExchange">Bay Street Stock Exchange</label>
+							<input type="radio" name="setting" id="bayStreetStockExchange" value="Bay Street stock exchange">
+						</div>
+
+						<div>
+							<label for="vanMJBusiness">Medical Marijuana Business</label>
+							<input type="radio" name="setting" id="vanMJBusiness" value="Vancouver medical marijuana business">
+						</div>
+					</div>
+				</section>
+
+				<section id="networkSection" class="networkNotes">
+					<div class="networkHeadline">
+						<h2>Network Notes 
+<i class="fa fa-exclamation-circle" aria-hidden="true"></i></h2>
+					</div>
+					<div class="innerWrapper networkOnly">
+						
+						<p>The networks have reviewed your story and <strong>CAN’T WAIT</strong> to work with you!</p>
+						<p>They have only a few notes to contribute:</p>
+
+						<div class="networkCheckboxes flexRow">
+							<div>
+								<div>
+									<label for="makeItSexy">Make it Sexier</label>
+									<input type="checkbox" name="network" id="makeItSexy" value=", and experiment, sexually">
+								</div>
+
+								<div>
+									<label class="labelMargin" for="makeItSexy">Make it edgy, but safe</label>
+									<input type="checkbox" name="networkEdgy" id="makeItEdgey" value=" in a way that’s edgy, but not too edgy for primetime">
+								</div>
+							</div>
+							<div>
+								<input class="submitButton" type="submit">
+							</div>
+						</div>
+
+						
+					</div>
+
+					<!-- <div class="standYourGroundOnly">
+						<label for="makeItSexy">Stand Your Ground!</label>
+						<input type="radio" name="standYourGround" id="standYourGround" value="">
+					</div> -->
+
+				</section>
+
+				
+			</form>
+		</div>
+	</main>
+
+	<div class="wrapper">
+		<section id="resultSection" class="result">
+
+			<section class="header">
+				<h2>YOUR TV SHOW LOGLINE</h2>
+			</section>
+			<div class="logLineBG">
+				<section class="logLine">
+					
+				</section>
+
+				<a href="#sendSection">
+					<button>SHARE YOUR BEAUTIFUL STORY</button>
+				</a>
+			</div>
+		</section>
+	</div>
+
+
+	<!-- <div class="wrapper"> -->
+		<section id="sendSection" class="send">
+		<div class="postalStrip"></div>
+			<div class="wrapper">
+				<p>Looking to send a pitch proposal? Below are a few TV networks who accept proposals:</p>
+				<ul>
+					<a href="http://www.bellmedia.ca/producer-guidelines/ctv/"><li>Bell Media</li></a>
+					<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+					<a href="http://www.showcase.ca/FAQ"><li>Showcase</li></a>
+					<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+					<a href="http://www.slice.ca/faq/"><li>Slice</li></a>
+					<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+					<a href="http://www.cbc.ca/independentproducers/regional/"><li>CBC</li></a>
+				</ul>
+			</div>
+		</section>
+	<!-- </div> -->
+	<footer>
+		<div class="wrapper	">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="Hi friends! Check out this awesome Canadian TV Show Generator" data-url="#" data-via="#" data-hashtags="CanadianTVShowGenerator" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<p>&copy;2016 <i class="fa fa-ellipsis-v" aria-hidden="true"></i> By <span><a href="http://www.gregamckenzie.com" target="_blank">Greg McKenzie</a></span> &amp; <span><a href="http://jaymierosen.com" target="_blank">Jaymie Rosen</a></span></p>
+		</div>
+		
+	</footer>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+	<script src="js/script.js"></script>
+	<script>window.twttr = (function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0],
+	    t = window.twttr || {};
+	  if (d.getElementById(id)) return t;
+	  js = d.createElement(s);
+	  js.id = id;
+	  js.src = "https://platform.twitter.com/widgets.js";
+	  fjs.parentNode.insertBefore(js, fjs);
+	 
+	  t._e = [];
+	  t.ready = function(f) {
+	    t._e.push(f);
+	  };
+	 
+	  return t;
+	}(document, "script", "twitter-wjs"));
+	</script>
+</body>
+</html>
